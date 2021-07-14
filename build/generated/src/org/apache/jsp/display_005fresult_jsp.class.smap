@@ -1,0 +1,16 @@
+SMAP
+display_005fresult_jsp.java
+JSP
+*S JSP
+*F
++ 0 display_result.jsp
+display_result.jsp
+*L
+5,99:46
+103,9:145
+111,19:154
+130,10:173,3
+140,6:203
+146:209,3
+147,3:212
+*E

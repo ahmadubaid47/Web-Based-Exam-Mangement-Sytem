@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#xd{ 
+    background-image:url(ExamSys.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+    #gd1{
+        display: none;
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+      #gd2{
+        display: none;
+         margin-left: 30%;
+        margin-top: 10%;
+     }
+      #k1{
+        margin-top: 18%;
+       
+       }
+         .b1 {
+                color: whitesmoke;
+                background-color:lightskyblue;  
+                padding: 17px;
+                padding-left:40px;
+                padding-right: 40px;
+                    
+                margin-left: 30%;
+               border: 3px solid black;
+               border-radius: 4%;
+             }
+             .b1:hover{
+                color:lightskyblue;
+                background-color:black;  
+             } 
+             .b2{
+                  color: whitesmoke;
+                   background-color:orange;  
+                  padding: 17px;
+                  padding-left:40px;
+                  padding-right: 40px;
+                  margin-left: 1%;
+                  border: 3px solid black;
+                  border-radius: 4%;
+               }
+               .b2:hover{
+                color:darksalmon;
+                background-color:black;  
+             
+                } 
+#e{
+margin-left: 5%;
+}
+#t{
+margin-top: 9%;
+margin-left: 40%
+}
+#q{
+margin-top: 9%;
+margin-left: 40%;
+display:none;
+}
+#y{
+padding: 8px;
+}
+#u{
+font-family: sans-serif;
+font-size: 15px
+}
+#g{
+padding: 7px;
+margin-left: 10%;
+background-color:silver;
+color: black;
+padding-left: 35px;
+padding-right: 35px;
+}
+#g:hover{
+  background-color:black;
+color: silver;  
+}
+#g1{
+padding: 7px;
+margin-left: 3%;
+background-color: lawngreen;
+padding-left: 35px;
+padding-right: 35px;
+}
+</style>
+<title>Online LMS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="xd">
+    <div id="k1">
+        <button onclick="a()" class="b1" id="setbtn"> Admin Login</button>
+        <button onclick="b()" class="b2" id="setbtn">Student Login</button>
+        </div>
+<form id="gd1" method="post" action="Login_authentication" id="t" >
+<h1 id="e">Admin Login</h1>
+<p id="u"> Username  <input id="y" type="text" name="tx1"></p>
+<br>
+<br>
+<p id="u">Password <input id="y" type="password" name="tx2"></p>
+<br>
+<button name="log" type="submit" id="g">Login </button>
+<br>
+</form>
+    
+<form id="gd2" method="post" action="Student_authentication" id="t" >
+<h1 id="e">Student Login</h1>
+<p id="u"> Roll no<input id="y" type="text" name="tx11"></p>
+<br>
+<br>
+<p id="u">Password <input id="y" type="password" name="tx22"></p>
+<br>
+<button name="log1" type="submit" id="g">Login</button>
+<br>
+</form>   
+<script>
+    
+    function a(){
+        
+        document.getElementById("gd1").style.display='block';
+        document.getElementById("k1").style.display='none';
+        
+    }
+    function b(){
+         document.getElementById("gd2").style.display='block';
+        document.getElementById("k1").style.display='none';
+    }
+
+        
+</script>
+</body>
+</html>
